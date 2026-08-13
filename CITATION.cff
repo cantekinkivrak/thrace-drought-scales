@@ -1,0 +1,51 @@
+cff-version: 1.2.0
+title: >-
+  Purpose-dependent drought accumulation scales for canopy monitoring and yield
+  prediction in rainfed Turkish Thrace — code and derived data
+message: >-
+  If you use this software or the derived data, please cite both the archive and
+  the accompanying article.
+type: software
+authors:
+  - family-names: Kıvrak
+    given-names: Cantekin
+    affiliation: >-
+      Atatürk Soil, Water and Agricultural Meteorology Research Institute,
+      Kırklareli, Türkiye
+    email: cantekin.kivrak@tarimorman.gov.tr
+    # orcid: 'https://orcid.org/0000-0000-0000-0000'
+  - family-names: Şener
+    given-names: Mehmet
+    affiliation: 'Namık Kemal University, Biosystems Engineering, Tekirdağ, Türkiye'
+    # orcid: 'https://orcid.org/0000-0000-0000-0000'
+abstract: >-
+  Analysis code and derived, analysis-ready data reproducing the scale-selection,
+  robustness, yield-prediction and spatial-aggregation results of the accompanying
+  article. Cropland Landsat Vegetation Health Index (30 m, CORINE class 211 mask,
+  alpha = 0.5) is evaluated against SPI and SPEI at five accumulation scales over
+  seven districts of Turkish Thrace, 1985-2024.
+keywords:
+  - agricultural drought
+  - SPEI
+  - Landsat
+  - Vegetation Health Index
+  - time-scale selection
+  - sunflower yield
+  - Turkish Thrace
+license: MIT
+license-url: 'https://opensource.org/licenses/MIT'
+version: 1.0.0
+date-released: '2026-08-13'
+preferred-citation:
+  type: article
+  title: >-
+    Purpose-dependent drought accumulation scales for canopy monitoring and yield
+    prediction in rainfed Turkish Thrace: a cropland Landsat Vegetation Health
+    Index evaluation
+  authors:
+    - family-names: Kıvrak
+      given-names: Cantekin
+    - family-names: Şener
+      given-names: Mehmet
+  journal: International Journal of Climatology
+  year: 2026

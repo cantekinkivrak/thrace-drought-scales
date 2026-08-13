@@ -1,0 +1,30 @@
+{
+  "upload_type": "software",
+  "title": "Purpose-dependent drought accumulation scales in rainfed Turkish Thrace: code and derived data",
+  "description": "<p>Analysis code and derived, analysis-ready data accompanying the article <em>&ldquo;Purpose-dependent drought accumulation scales for canopy monitoring and yield prediction in rainfed Turkish Thrace: a cropland Landsat Vegetation Health Index evaluation&rdquo;</em> (C. K&#305;vrak and M. &#350;ener, <em>International Journal of Climatology</em>).</p><p>A cropland-masked 30&nbsp;m Landsat Vegetation Health Index (CORINE class 211, &alpha;&nbsp;=&nbsp;0.5) is evaluated against SPI and SPEI at 1-, 3-, 6-, 9- and 12-month accumulation scales across seven districts of Turkish Thrace for 1985&ndash;2024. Ten candidate indices are scored on four non-duplicated criteria over one identical complete-case sample (n&nbsp;=&nbsp;1,183), with selection uncertainty from a two-way block bootstrap, leave-one-year-out categorical skill, a district fixed-effects yield panel, and a multi-resolution aggregation test.</p><p>Running <code>python code/verify_headline_numbers.py</code> reproduces the headline results of the paper from the files in <code>data/</code>: SPEI-3 composite 40/40 with r&nbsp;=&nbsp;0.520, SPI-3 34, SPEI-9 32, bootstrap selection frequency 63.7&nbsp;%, and Heidke skill score 0.297.</p><p><strong>Licensing:</strong> the code in <code>code/</code> is released under the MIT licence; the derived data in <code>data/</code> are released under CC BY 4.0. The underlying raw records from the Turkish State Meteorological Service (MGM) and the Turkish Statistical Institute (T&Uuml;&#304;K) are not redistributed and remain subject to those agencies' terms &mdash; see LICENSE-DATA.md.</p>",
+  "creators": [
+    {
+      "name": "Kıvrak, Cantekin",
+      "affiliation": "Atatürk Soil, Water and Agricultural Meteorology Research Institute, Kırklareli, Türkiye"
+    },
+    {
+      "name": "Şener, Mehmet",
+      "affiliation": "Namık Kemal University, Biosystems Engineering, Tekirdağ, Türkiye"
+    }
+  ],
+  "license": "mit",
+  "access_right": "open",
+  "language": "eng",
+  "keywords": [
+    "agricultural drought",
+    "SPEI",
+    "SPI",
+    "Landsat",
+    "Vegetation Health Index",
+    "time-scale selection",
+    "sunflower yield",
+    "Turkish Thrace",
+    "Google Earth Engine",
+    "reproducible research"
+  ]
+}
