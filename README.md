@@ -1,15 +1,16 @@
 # Purpose-dependent drought accumulation scales in rainfed Turkish Thrace
 
-<!-- After creating the first GitHub Release, Zenodo mints a DOI. Paste the badge markdown
-     from the Zenodo record here, e.g.:
-     [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
--->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21931123.svg)](https://doi.org/10.5281/zenodo.21931123)
+[![License: MIT](https://img.shields.io/badge/Code%20licence-MIT-blue.svg)](LICENSE)
+[![Data: CC BY 4.0](https://img.shields.io/badge/Data%20licence-CC%20BY%204.0-lightgrey.svg)](LICENSE-DATA.md)
 
 Code and derived data accompanying:
 
 > Kıvrak, C. and Şener, M. (2026) Purpose-dependent drought accumulation scales for canopy
 > monitoring and yield prediction in rainfed Turkish Thrace: a cropland Landsat Vegetation
 > Health Index evaluation. *International Journal of Climatology* (submitted).
+
+Archived release: <https://doi.org/10.5281/zenodo.21931123>
 
 This archive reproduces every statistical result reported in the paper from the derived,
 analysis-ready data included here. The Google Earth Engine notebooks that generate those derived
@@ -64,7 +65,6 @@ figures/    publication figures as deposited
 |---|---|
 | `trakya_district_vhi_vci_tci_monthly.csv` | Monthly district-level cropland NDVI, LST, VCI, TCI and **VHI (α = 0.5)**, 7 districts × 1985–2024 |
 | `trakya_spi_spei_flexible_1965_2024.csv` | SPI and SPEI at five accumulation scales, AICc-flexible distribution choice; `SPEIe*` columns are the Oudin-PET sensitivity arm |
-| `trakya_TP_PET_1965_2024.csv` | Monthly station precipitation, temperature and PET |
 | `scale_selection_multicriteria.csv` | The four-criterion ranking table (Table 2) |
 | `sensitivity_summary.csv` | Scale selection repeated under seven alternative specifications |
 | `bootstrap_selection_frequency.csv` | Two-way block bootstrap selection frequencies |
@@ -74,6 +74,15 @@ figures/    publication figures as deposited
 | `yield_panel_wheat.csv`, `yield_panel_sunflower.csv` | District × year yield panels joined to SPEI |
 | `spatial/Trakya_Merged.*` | District boundaries used for zonal aggregation |
 | `spatial/station_info.xlsx` | Station names, coordinates and elevations |
+
+**Note on the meteorological inputs.** The monthly station precipitation and temperature series
+supplied by the Turkish State Meteorological Service (MGM) are **not** redistributed here: MGM
+retains all rights in those records and they were provided to the authors for research use only.
+What is provided instead are the standardized indices computed from them
+(`trakya_spi_spei_flexible_1965_2024.csv`), which are dimensionless anomalies and are all that the
+published analyses use. Re-deriving SPI and SPEI from the raw series therefore requires a data
+request to MGM (https://www.mgm.gov.tr). Everything reported in the paper reproduces from the files
+included here.
 
 **Note on α.** The Vegetation Health Index is VHI = α·VCI + (1 − α)·TCI. This paper uses a fixed,
 unweighted α = 0.5 throughout; the `VHI` column in

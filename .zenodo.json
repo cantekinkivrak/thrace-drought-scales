@@ -5,11 +5,13 @@
   "creators": [
     {
       "name": "Kıvrak, Cantekin",
-      "affiliation": "Atatürk Soil, Water and Agricultural Meteorology Research Institute, Kırklareli, Türkiye"
+      "affiliation": "Atatürk Soil, Water and Agricultural Meteorology Research Institute, Kırklareli, Türkiye",
+      "orcid": "0000-0002-6221-2469"
     },
     {
       "name": "Şener, Mehmet",
-      "affiliation": "Namık Kemal University, Biosystems Engineering, Tekirdağ, Türkiye"
+      "affiliation": "Namık Kemal University, Biosystems Engineering, Tekirdağ, Türkiye",
+      "orcid": "0000-0002-6736-0567"
     }
   ],
   "license": "mit",

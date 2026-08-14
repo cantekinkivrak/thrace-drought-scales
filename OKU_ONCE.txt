@@ -1,0 +1,24 @@
+v1.0.1 icin degisen dosyalar
+============================
+
+1) Bu klasordeki dosyalari, GitHub deponun klasorune AYNI YAPIDA kopyala
+   (uzerine yaz):
+
+       .zenodo.json                    -> depo kokune
+       CITATION.cff                    -> depo kokune
+       LICENSE-DATA.md                 -> depo kokune
+       README.md                       -> depo kokune
+       Supporting_Information.docx     -> depo kokune
+       figures/Graphical_Abstract.png  -> figures/ klasorune
+
+   Not: .zenodo.json gizli dosyadir. Windows Gezgini'nde
+   Gorunum -> Gizli ogeler kutusunu isaretle, yoksa goremezsin.
+
+2) Depodan SU IKI DOSYAYI SIL:
+
+       Supplementary_Station_Figures.docx      (icerigi artik SI'nin icinde)
+       data/trakya_TP_PET_1965_2024.csv        (MGM istasyon verisi)
+
+3) GitHub Desktop -> degisiklikleri gozden gecir -> commit -> Push.
+
+Beklenen ozet: 6 dosya degisti, 2 dosya silindi.

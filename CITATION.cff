@@ -13,11 +13,11 @@ authors:
       Atatürk Soil, Water and Agricultural Meteorology Research Institute,
       Kırklareli, Türkiye
     email: cantekin.kivrak@tarimorman.gov.tr
-    # orcid: 'https://orcid.org/0000-0000-0000-0000'
+    orcid: 'https://orcid.org/0000-0002-6221-2469'
   - family-names: Şener
     given-names: Mehmet
     affiliation: 'Namık Kemal University, Biosystems Engineering, Tekirdağ, Türkiye'
-    # orcid: 'https://orcid.org/0000-0000-0000-0000'
+    orcid: 'https://orcid.org/0000-0002-6736-0567'
 abstract: >-
   Analysis code and derived, analysis-ready data reproducing the scale-selection,
   robustness, yield-prediction and spatial-aggregation results of the accompanying
@@ -35,7 +35,13 @@ keywords:
 license: MIT
 license-url: 'https://opensource.org/licenses/MIT'
 version: 1.0.0
-date-released: '2026-08-13'
+doi: 10.5281/zenodo.21931123
+repository-code: 'https://github.com/cantekinkivrak/thrace-drought-scales'
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.21931123
+    description: Archived v1.0.0 release on Zenodo
+date-released: '2026-08-14'
 preferred-citation:
   type: article
   title: >-
@@ -45,7 +51,9 @@ preferred-citation:
   authors:
     - family-names: Kıvrak
       given-names: Cantekin
+      orcid: 'https://orcid.org/0000-0002-6221-2469'
     - family-names: Şener
       given-names: Mehmet
+      orcid: 'https://orcid.org/0000-0002-6736-0567'
   journal: International Journal of Climatology
   year: 2026

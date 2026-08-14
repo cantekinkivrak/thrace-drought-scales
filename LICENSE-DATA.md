@@ -21,7 +21,7 @@ The derived products above were computed from records supplied by third parties.
 records are not included in this archive and are not covered by the licence above.**
 
 **Turkish State Meteorological Service (MGM)** — daily and monthly precipitation and temperature
-for the seven stations. Supplied to the authors for research use; MGM retains all rights and
+for the seven stations. These series are not included in this archive in any form, raw or monthly. Supplied to the authors for research use; MGM retains all rights and
 redistribution of the raw station series is not permitted. Requests: https://www.mgm.gov.tr
 
 **Turkish Statistical Institute (TÜİK)** — district-level wheat and sunflower production and
