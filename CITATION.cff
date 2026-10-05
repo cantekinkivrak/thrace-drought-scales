@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 title: >-
-  Purpose-dependent drought accumulation scales for canopy monitoring and yield
-  prediction in rainfed Turkish Thrace — code and derived data
+  Season-dependent drought accumulation scales for cropland monitoring and yield
+  modelling in rainfed Turkish Thrace — code and derived data
 message: >-
   If you use this software or the derived data, please cite both the archive and
   the accompanying article.
@@ -20,34 +20,42 @@ authors:
     orcid: 'https://orcid.org/0000-0002-6736-0567'
 abstract: >-
   Analysis code and derived, analysis-ready data reproducing the scale-selection,
-  robustness, yield-prediction and spatial-aggregation results of the accompanying
-  article. Cropland Landsat Vegetation Health Index (30 m, CORINE class 211 mask,
-  alpha = 0.5) is evaluated against SPI and SPEI at five accumulation scales over
-  seven districts of Turkish Thrace, 1985-2024.
+  seasonal-window, compositing-sensitivity, robustness, yield-modelling and
+  spatial-aggregation results of the accompanying article (revised version).
+  A cropland Landsat Vegetation Health Index (30 m, CORINE class 211 mask, monthly
+  median composite, alpha = 0.5) is evaluated against SPI and SPEI at five
+  accumulation scales over seven districts of Turkish Thrace, 1985-2024; the
+  per-scene district table from which every compositing and mask variant can be
+  rebuilt is included.
 keywords:
   - agricultural drought
   - SPEI
   - Landsat
   - Vegetation Health Index
   - time-scale selection
+  - seasonal windows
+  - compositing
   - sunflower yield
   - Turkish Thrace
 license: MIT
 license-url: 'https://opensource.org/licenses/MIT'
-version: 1.0.0
-doi: 10.5281/zenodo.21931123
+version: 1.1.0
+doi: 10.5281/zenodo.21934057
 repository-code: 'https://github.com/cantekinkivrak/thrace-drought-scales'
 identifiers:
   - type: doi
     value: 10.5281/zenodo.21931123
-    description: Archived v1.0.0 release on Zenodo
-date-released: '2026-08-14'
+    description: Archived v1.0.0 release on Zenodo (submission version)
+  - type: doi
+    value: 10.5281/zenodo.21934057
+    description: Archived v1.0.1 release on Zenodo (submission version)
+date-released: '2026-10-05'
 preferred-citation:
   type: article
   title: >-
-    Purpose-dependent drought accumulation scales for canopy monitoring and yield
-    prediction in rainfed Turkish Thrace: a cropland Landsat Vegetation Health
-    Index evaluation
+    Season-dependent drought accumulation scales for cropland monitoring and yield
+    modelling in rainfed Turkish Thrace: a Landsat Vegetation Health Index
+    evaluation
   authors:
     - family-names: Kıvrak
       given-names: Cantekin

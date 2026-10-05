@@ -1,0 +1,5 @@
+scenario,n,winner,winner_composite,r_SPEI3,r_SPI3,r_SPEI9
+median VHI: climatology + anomaly gap fill,1183,SPEI3,40.0,0.5204217956873651,0.4780317274682533,0.473965421769258
+median VHI: reference 1985-2024,1183,SPEI3,37.0,0.5137337803188272,0.4773384934795254,0.4724901270488262
+"median VHI: stations without temperature break (Çorlu, Lüleburgaz, Tekirdağ)",586,SPEI3,38.0,0.4817108440404214,0.43976118824423677,0.413618858388918
+"median VHI: stations without precipitation break (Çorlu, Lüleburgaz, Uzunköprü)",590,SPEI3,38.0,0.5252683542809623,0.4720109208951965,0.46696581052192937

@@ -411,7 +411,7 @@ def make_study_area_figure():
         )
         ax.scatter(
             contrast["lon"], contrast["lat"], s=100, marker="^", color="#d4483b",
-            edgecolor="white", linewidth=1.0, label="İpsala contrast district", zorder=3,
+            edgecolor="white", linewidth=1.0, label="İpsala (irrigation-boundary district, excluded)", zorder=3,
         )
         offsets = {
             "corlu": (0.05, 0.06), "edirne": (-0.33, 0.06),
@@ -431,6 +431,19 @@ def make_study_area_figure():
         ax.legend(loc="lower left", frameon=True)
         ax.grid(alpha=0.25, linestyle=":")
         ax.set_aspect("equal", adjustable="box")
+        # north arrow (upper right) and a 50 km scale bar (lower right); 1° longitude ≈ 83.7 km at 41.3° N
+        ax.annotate("N", xy=(0.95, 0.93), xytext=(0.95, 0.80), xycoords="axes fraction",
+                    ha="center", va="center", fontsize=12, weight="bold",
+                    arrowprops=dict(arrowstyle="-|>", lw=1.6, color="black", shrinkA=0, shrinkB=0))
+        x0, x1 = ax.get_xlim(); y0, y1 = ax.get_ylim()
+        mid_lat = 0.5 * (y0 + y1)
+        bar_deg = 50 / (111.32 * np.cos(np.radians(mid_lat)))
+        bx = x1 - 0.06 * (x1 - x0) - bar_deg; by = y0 + 0.06 * (y1 - y0)
+        ax.plot([bx, bx + bar_deg], [by, by], color="black", lw=3, solid_capstyle="butt", zorder=4)
+        ax.plot([bx, bx + bar_deg / 2], [by, by], color="white", lw=1.4, solid_capstyle="butt", zorder=5)
+        for xx, lab in [(bx, "0"), (bx + bar_deg / 2, "25"), (bx + bar_deg, "50 km")]:
+            ax.text(xx, by + 0.012 * (y1 - y0), lab, ha="center", va="bottom", fontsize=8)
+        ax.set_xlim(x0, x1); ax.set_ylim(y0, y1)
         _save_figure(fig, "Fig1_study_area_revised.png")
     except Exception as exc:
         print(f"Study-area figure could not be redrawn: {exc}", flush=True)

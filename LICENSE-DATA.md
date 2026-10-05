@@ -9,9 +9,9 @@ released under the **Creative Commons Attribution 4.0 International licence (CC 
 You are free to share and adapt them for any purpose, including commercially, provided you give
 appropriate credit by citing:
 
-> Kıvrak, C. and Şener, M. (2026) Purpose-dependent drought accumulation scales for canopy
-> monitoring and yield prediction in rainfed Turkish Thrace: a cropland Landsat Vegetation
-> Health Index evaluation. *International Journal of Climatology*.
+> Kıvrak, C. and Şener, M. (2026) Season-dependent drought accumulation scales for cropland
+> monitoring and yield modelling in rainfed Turkish Thrace: a Landsat Vegetation Health Index
+> evaluation. *International Journal of Climatology*.
 
 Full licence text: https://creativecommons.org/licenses/by/4.0/
 

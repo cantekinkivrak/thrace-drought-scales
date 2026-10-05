@@ -1,0 +1,8 @@
+key,months,scenes_per_month,max_minus_median,max_minus_median_p90,share_max_from_cov_lt50,share_max_from_slcoff,within_month_sd
+corlu,197,10.0,0.036,0.092,0.772,0.249,0.028
+edirne,187,5.0,0.032,0.084,0.246,0.225,0.028
+ipsala,195,9.0,0.06,0.269,0.728,0.323,0.037
+kirklareli,189,5.0,0.032,0.078,0.598,0.196,0.028
+luleburgaz,153,3.0,0.028,0.073,0.242,0.19,0.028
+tekirdag,194,6.0,0.029,0.096,0.418,0.222,0.03
+uzunkopru,195,8.0,0.032,0.067,0.395,0.164,0.024

@@ -1,0 +1,15 @@
+variable,station,n_years,SNHT_max,candidate_break_year,permutation_p
+temperature,corlu,60,9.280542567560108,2006,0.017
+temperature,edirne,60,24.478487895046705,2015,0.001
+temperature,ipsala,60,6.524828350911104,2004,0.068
+temperature,kirklareli,60,7.283206052792039,2014,0.054
+temperature,luleburgaz,60,9.728828172998506,2007,0.013
+temperature,tekirdag,60,14.16977930078713,2007,0.004
+temperature,uzunkopru,60,5.8124455661848895,2007,0.111
+precipitation,corlu,60,2.6240478410105244,1999,0.516
+precipitation,edirne,60,8.7396486496041,2005,0.027
+precipitation,ipsala,60,13.25242060460725,2015,0.003
+precipitation,kirklareli,60,16.41737002518519,2014,0.001
+precipitation,luleburgaz,60,4.694519157551998,2002,0.203
+precipitation,tekirdag,60,9.534579373998476,2012,0.017
+precipitation,uzunkopru,60,4.393212297487089,1990,0.254

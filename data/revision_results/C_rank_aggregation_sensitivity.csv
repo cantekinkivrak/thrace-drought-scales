@@ -1,0 +1,14 @@
+scheme,ranking,SPEI3_pos,SPEI3_score,SPEI3_MI_rank
+sum of ranks (paper),SPEI3 > SPEI9 > SPI3,1,40.0,
+sum of z-scores,SPEI3 > SPEI9 > SPI3,1,6.52,
+drop pearson,SPEI3 > SPEI9 > SPI3,1,30.0,
+drop spearman,SPEI3 > SPEI9 > SPI3,1,30.0,
+drop MI,SPEI3 > SPI3 > SPEI9,1,30.0,
+drop tercile_delta,SPEI3 > SPI3 > SPEI9,1,30.0,
+Pearson+Spearman only,SPEI3 > SPI3 > SPEI9,1,20.0,
+MI+tercile only,SPEI3 > SPEI9 > SPI3,1,20.0,
+MI k=3,SPEI3 > SPEI9 > SPI3,1,39.0,2.0
+MI k=5,SPEI3 > SPEI9 > SPI3,1,40.0,1.0
+MI k=7,SPEI3 > SPI3 > SPEI9,1,38.0,3.0
+MI k=10,SPEI3 > SPI3 > SPEI9,1,38.0,3.0
+MI k=15,SPEI3 > SPI3 > SPEI9,1,39.0,2.0

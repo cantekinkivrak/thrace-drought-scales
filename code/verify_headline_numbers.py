@@ -5,14 +5,19 @@ Run from the repository root:
 
     python code/verify_headline_numbers.py
 
-Expected output (Table 2 and Section 3.3 of the paper):
+Expected output (revised version, median-composite VHI; Table 2 and Sections 3.3-3.7 of the paper):
 
     n = 1183
-    SPEI3  composite 40  r = 0.520
-    SPI3   composite 34  r = 0.483
-    SPEI9  composite 32  r = 0.464
-    bootstrap selection frequency SPEI3 = 63.7 %
-    HSS = 0.297
+    SPEI3  composite 40  r = 0.521
+    SPEI9  composite 34  r = 0.474
+    SPI3   composite 33  r = 0.478
+    district SPEI-3 correlations: Edirne 0.578, Uzunköprü 0.563, Kırklareli 0.534, Çorlu 0.533,
+        Lüleburgaz 0.475, Tekirdağ 0.435 (primary six) and İpsala 0.446 (sensitivity domain)
+    bootstrap selection frequency SPEI3 = 67.7 %
+    HSS = 0.253 [0.164, 0.323]
+
+The v1.0.x release (maximum-NDVI/mean-LST composite, now data/trakya_district_vhi_vci_tci_monthly_maxcomposite.csv)
+gave SPEI3 40 (r = 0.520), SPI3 34, SPEI9 32, 63.7 % and HSS = 0.297; see CHANGELOG.md.
 """
 from pathlib import Path
 
@@ -28,7 +33,7 @@ CANDIDATES = ["SPI1", "SPI3", "SPI6", "SPI9", "SPI12",
               "SPEI1", "SPEI3", "SPEI6", "SPEI9", "SPEI12"]
 CRITERIA = ["pearson", "spearman", "MI", "dose_amp"]
 GROWING_SEASON = range(6, 11)          # June-October
-IRRIGATED = "ipsala"                   # excluded from the primary six-district sample
+IRRIGATED = "ipsala"                   # irrigation-boundary district, excluded from the primary six-district sample
 ALPHA = 0.5                            # VHI = alpha * VCI + (1 - alpha) * TCI
 
 
@@ -81,7 +86,7 @@ def main() -> None:
     print(table[["index"] + CRITERIA + ["composite"]]
           .to_string(index=False, float_format=lambda v: f"{v:.3f}"))
 
-    print("\nDistrict-level SPEI-3 correlation with VHI (June-October):")
+    print("\nDistrict-level SPEI-3 correlation with VHI (June-October; ipsala = sensitivity domain, Section 3.5):")
     vhi = pd.read_csv(DATA / "trakya_district_vhi_vci_tci_monthly.csv")
     idx = pd.read_csv(DATA / "trakya_spi_spei_flexible_1965_2024.csv")
     vhi["key"] = vhi["name"].str.lower()

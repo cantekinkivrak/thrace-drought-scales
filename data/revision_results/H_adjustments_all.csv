@@ -1,0 +1,15 @@
+station,variable,break_year,shift
+corlu,temperature,2010,0.18
+edirne,temperature,2015,0.55
+ipsala,temperature,1979,0.49
+kirklareli,temperature,1991,-0.24
+luleburgaz,temperature,1993,0.52
+tekirdag,temperature,1979,-0.17
+uzunkopru,temperature,1986,-0.26
+corlu,precipitation,1999,0.06
+edirne,precipitation,2014,0.13
+ipsala,precipitation,2015,-0.24
+kirklareli,precipitation,2003,0.2
+luleburgaz,precipitation,2002,-0.08
+tekirdag,precipitation,2005,-0.15
+uzunkopru,precipitation,1990,-0.08
